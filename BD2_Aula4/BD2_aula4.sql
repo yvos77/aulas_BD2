@@ -51,7 +51,7 @@ CREATE TABLE biblioteca.livro_copias(
 );
 SELECT * FROM biblioteca.livro_copias;
 INSERT INTO biblioteca.livro_copias (cod_livro, cod_unidade, quantidade_copia) VALUES
-(1,1,3), (2,2,10),(3,3,1);
+(1,1,3), (2,2,10), (3,3,1);
 
 CREATE TABLE biblioteca.usuario(
 	num_cartao INT PRIMARY KEY,
@@ -77,5 +77,6 @@ SELECT * FROM biblioteca.emprestimo;
 INSERT INTO biblioteca.emprestimo (cod_livro,cod_unidade,num_cartao,dt_emprestimo,dt_devolucao) VALUES
 (1,1,1111111,'2025-09-01','2025-09-15'), (2,2,2222222,'2025-09-10','2025-09-20'), 
 (3,3,3333333,'2025-09-30','2025-10-09');
+
 
 SELECT num_cartao, dt_emprestimo, dt_devolucao FROM biblioteca.emprestimo;
